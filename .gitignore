@@ -1,3 +1,9 @@
+# mine
+data/DHS_Pics
+data/train
+demo_data
+*.tar
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
