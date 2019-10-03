@@ -4,11 +4,7 @@ data_dump
 *.tar
 .DS_Store
 
-data_top
-looking_at_tars.ipynb
-test_model_build.ipynb
-torchvision_explore.ipynb
-torchvision_hack_cnn_regression.ipynb
+famine_data/DHS_pics
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
