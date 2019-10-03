@@ -5,7 +5,10 @@ data_dump
 .DS_Store
 
 famine_data/DHS_pics
+famine_data/DHS_pics.zip
 famine_data/train
+
+credentials.txt
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
