@@ -9,7 +9,6 @@ famine_data/ims
 setup_existing_model/predicting_poverty_trained.caffemodel
 famine_data/ims_malawi_2016
 
-
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
