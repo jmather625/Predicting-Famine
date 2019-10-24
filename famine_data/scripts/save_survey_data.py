@@ -34,26 +34,28 @@ if __name__ == '__main__':
   ############ DHS ###########
   ############################
 
-  countries = ['nigeria', 'tanzania', 'uganda', 'malawi', 'rwanda']
-  fns = ['../data/output/DHS/Nigeria 2013 DHS (Cluster).txt',
-         '../data/output/DHS/Tanzania 2010 DHS (Cluster).txt',
-         '../data/output/DHS/Uganda 2011 DHS (Cluster).txt',
-         '../data/output/DHS/Malawi 2010 DHS (Cluster).txt',
-         '../data/output/DHS/Rwanda 2010 DHS (Cluster).txt']
-  out_dir = '../data/output/DHS/'
-  names = ['lats', 'lons', 'assets', 'nightlights', 'households']
-  keys = ['lat', 'lon', 'wealthscore', 'nl', 'n']
-  retrieve_and_save(countries, fns, out_dir, names, keys, sample=sample)
+  # countries = ['nigeria', 'tanzania', 'uganda', 'malawi', 'rwanda']
+  # fns = ['../data/output/DHS/Nigeria 2013 DHS (Cluster).txt',
+  #        '../data/output/DHS/Tanzania 2010 DHS (Cluster).txt',
+  #        '../data/output/DHS/Uganda 2011 DHS (Cluster).txt',
+  #        '../data/output/DHS/Malawi 2010 DHS (Cluster).txt',
+  #        '../data/output/DHS/Rwanda 2010 DHS (Cluster).txt']
+  # out_dir = '../data/output/DHS/'
+  # names = ['lats', 'lons', 'assets', 'nightlights', 'households']
+  # keys = ['lat', 'lon', 'wealthscore', 'nl', 'n']
+  # retrieve_and_save(countries, fns, out_dir, names, keys, sample=sample)
 
   ############################
   ############ LSMS ##########
   ############################
 
-  countries = ['nigeria', 'tanzania', 'uganda', 'malawi']
-  fns = ['../data/output/LSMS/Nigeria 2013 LSMS (Cluster).txt',
-         '../data/output/LSMS/Tanzania 2013 LSMS (Cluster).txt',
-         '../data/output/LSMS/Uganda 2012 LSMS (Cluster).txt',
-         '../data/output/LSMS/Malawi 2013 LSMS (Cluster).txt']
+  # countries = ['nigeria', 'tanzania', 'uganda', 'malawi']
+  countries = ['malawi'] # can't get nigeria to work
+  # fns = ['../data/output/LSMS/Nigeria 2013 LSMS (Cluster).txt',
+  fns = [
+        #  '../data/output/LSMS/Tanzania 2013 LSMS (Cluster).txt',
+        #  '../data/output/LSMS/Uganda 2012 LSMS (Cluster).txt',
+         '../data/output/LSMS/Malawi_2016_LSMS_(Cluster).txt']
   out_dir = '../data/output/LSMS/'
   names = ['lats', 'lons', 'consumptions', 'nightlights', 'households']
   keys = ['lat', 'lon', 'cons', 'nl', 'n']

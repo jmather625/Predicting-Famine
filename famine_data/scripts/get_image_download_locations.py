@@ -17,18 +17,18 @@ def get_download_locations(countries, cluster_loc_dir, nightlight_tif):
     cluster_lons = np.load(os.path.join(cluster_loc_dir,
                                         country, 'lons.npy'))
     clusters = [(cluster_lats[i], cluster_lons[i])
-                for i in xrange(cluster_lats.size)]
+                for i in range(cluster_lats.size)]
     top_lefts = [(lat + 0.045, lon - 0.045) for lat, lon in clusters]
     bottom_rights = [(lat - 0.045, lon + 0.045) for lat, lon in clusters]
     top_left_pixellocs = locsToPixels(nightlight_tif, top_lefts)
     bottom_right_pixellocs = locsToPixels(nightlight_tif, bottom_rights)
     output_cluster_locs = []
     output_pix = []
-    for i in xrange(len(clusters)):
+    for i in range(len(clusters)):
       top_left = top_left_pixellocs[i]
       bottom_right = bottom_right_pixellocs[i]
-      for x in xrange(top_left[0], bottom_right[0]):
-        for y in xrange(top_left[1], bottom_right[1]):
+      for x in range(top_left[0], bottom_right[0]):
+        for y in range(top_left[1], bottom_right[1]):
           if country == 'nigeria' or country == 'tanzania':
             if x % 2 == 1 or y % 2 == 1:
               continue
@@ -82,10 +82,10 @@ if __name__ == '__main__':
   nightlight_tif = "../data/input/Nightlights/2013/F182013.v4c_web.stable_lights.avg_vis.tif"
 
   # DHS
-  print("Generating candidate image locations for DHS")
-  countries = ['nigeria', 'tanzania', 'uganda', 'malawi', 'rwanda']
-  cluster_loc_dir = '../data/output/DHS'
-  get_download_locations(countries, cluster_loc_dir, nightlight_tif)
+  # print("Generating candidate image locations for DHS")
+  # countries = ['nigeria', 'tanzania', 'uganda', 'malawi', 'rwanda']
+  # cluster_loc_dir = '../data/output/DHS'
+  # get_download_locations(countries, cluster_loc_dir, nightlight_tif)
 
   # LSMS
   print("Generating candidate image locations for LSMS")

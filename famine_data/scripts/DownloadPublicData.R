@@ -3,15 +3,14 @@
 # Jan 2017: Removed references to elevation data which had become restricted #
 # Mar 2017: NOAA changed URL of hosted files #
 
-setwd('predicting-poverty') # Set working directory to where you downloaded the replication folder
 rm(list=ls())
 library(R.utils)
 
 # Downloads nightlights data (about 400 MB zipped and 750 MB unzipped per year), saves the relevant raster, then deletes unused files locally
-dir.create('data/input/Nightlights')
+dir.create('../../data/input/Nightlights')
 for (year in 2010:2013){
   url <- paste0('https://ngdc.noaa.gov/eog/data/web_data/v4composites/F18', year, '.v4.tar')
-  temp <- paste0('data/input/Nightlights/', year)
+  temp <- paste0('../data/input/Nightlights/', year)
   dir.create(temp)
   dest <- paste0(temp, '/F18', year, '.v4.tar')
   download.file(url, dest)
