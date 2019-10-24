@@ -1,10 +1,14 @@
 # mine
-demo_data
-data_dump
-*.tar
-.DS_Store
+*.csv
+*.npy
+*.txt
+*.png
+famine_data/train
+famine_data/valid
+famine_data/ims
+setup_existing_model/predicting_poverty_trained.caffemodel
+famine_data/ims_malawi_2016
 
-famine_data/DHS_pics
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
