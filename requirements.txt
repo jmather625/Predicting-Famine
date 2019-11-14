@@ -3,4 +3,4 @@ torchvision
 networx
 matplotlib
 pillow
-
+shapely
