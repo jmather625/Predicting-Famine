@@ -3,9 +3,9 @@ The purpose of this repository is to predict three different measurements of foo
 
 # Results
 <p align="center">
-  <img src="figures/malawi_2016/Malawi_rCSI_results.png" width="400">
-  <img src="figures/malawi_2016/Malawi_FCS_results.png" width="400">
-  <img src="figures/malawi_2016/Malawi_HDDS_results.png" width="400">
+  <img src="./figures/malawi_2016/Malawi_rCSI_results.png" width="400">
+  <img src="./figures/malawi_2016/Malawi_FCS_results.png" width="400">
+  <img src="./figures/malawi_2016/Malawi_HDDS_results.png" width="400">
 </p>
 
 # Setup
